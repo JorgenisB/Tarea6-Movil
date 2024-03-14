@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>GenderPrediction</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">GenderPrediction</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-label position="floating">Ingresa el nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="genero"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="getGenero()">Genero</ion-button>
+
+    <ion-item>
+      {{printGender}}
+    </ion-item>
+
+  <ion-item class="img">
+    <img [src]="img">
+  </ion-item>
+
+</ion-content>
